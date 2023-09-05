@@ -37,6 +37,7 @@ const App = () => {
     const [appIsReady, setAppIsReady] = useState(false);
 
     useEffect(() => {
+        debugger
         async function loadResourcesAndDataAsync() {
             try {
                 SplashScreen.preventAutoHideAsync();
@@ -78,3 +79,5 @@ const cacheImages = (images: Array<string> | Array<number>) => {
         }
     });
 };
+
+export default App;
